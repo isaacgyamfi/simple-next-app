@@ -27,7 +27,7 @@ const Home = () => (
         <a href="https://github.com/isaacgyamfi">isaacgyamfi</a>
       </div>
       <div className="card">
-        <p>Become my friend</p>
+        <p>Become my friend on Facebook</p>
         <a href="https://facebook.com/bohyeba.isaac.7">bohyeba.isaac.7</a>
       </div>
       <div className="card">
