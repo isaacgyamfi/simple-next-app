@@ -1,60 +1,39 @@
-import Head from 'next/head'
+import Head from 'next/head';
 
 const Home = () => (
   <div className="container">
     <Head>
-      <title>Create Next App</title>
-      <link rel="icon" href="/favicon.ico" />
+      <title>Meet Isaac, the developer</title>
+      <link rel="icon" href="/profile-img.jpeg" />
     </Head>
 
     <main>
-      <h1 className="title">
-        Welcome to <a href="https://nextjs.org">Next.js!</a>
-      </h1>
-
-      <p className="description">
-        Get started by editing <code>pages/index.js</code>
-      </p>
-
-      <div className="grid">
-        <a href="https://nextjs.org/docs" className="card">
-          <h3>Documentation &rarr;</h3>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
-
-        <a href="https://nextjs.org/learn" className="card">
-          <h3>Learn &rarr;</h3>
-          <p>Learn about Next.js in an interactive course with quizzes!</p>
-        </a>
-
-        <a
-          href="https://github.com/zeit/next.js/tree/master/examples"
-          className="card"
-        >
-          <h3>Examples &rarr;</h3>
-          <p>Discover and deploy boilerplate example Next.js projects.</p>
-        </a>
-
-        <a
-          href="https://zeit.co/new?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          className="card"
-        >
-          <h3>Deploy &rarr;</h3>
-          <p>
-            Instantly deploy your Next.js site to a public URL with ZEIT Now.
-          </p>
-        </a>
-      </div>
+      <img
+        src="https://media-exp1.licdn.com/dms/image/C4D03AQEL2C1SjNWfrw/profile-displayphoto-shrink_200_200/0?e=1588809600&v=beta&t=hrTiSHxZp5c-EVWo25ocbL-_MkvSx4CNg8uTwPpblZg"
+        alt="profile"
+      />
+      <h1>ISAAC FRIMPONG GYAMFI</h1>
+      <hr />
+      <p>Full Stack Web developer | BSc. Computer Science</p>
     </main>
 
     <footer>
-      <a
-        href="https://zeit.co?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        Powered by <img src="/zeit.svg" alt="ZEIT Logo" />
-      </a>
+      <div className="card">
+        <p>Connect on LinkedIn</p>
+        <a href="https://linkedin.com/in/isaacgyamfi8">isaacgyamfi8</a>
+      </div>
+      <div className="card">
+        <p>Follow me on GitHub</p>
+        <a href="https://github.com/isaacgyamfi">isaacgyamfi</a>
+      </div>
+      <div className="card">
+        <p>Become my friend</p>
+        <a href="https://facebook.com/bohyeba.isaac.7">bohyeba.isaac.7</a>
+      </div>
+      <div className="card">
+        <p>Follow me on Twitter</p>
+        <a href="https://twitter.com/gyamisaac">gyamisaac</a>
+      </div>
     </footer>
 
     <style jsx>{`
@@ -78,11 +57,17 @@ const Home = () => (
 
       footer {
         width: 100%;
-        height: 100px;
         border-top: 1px solid #eaeaea;
         display: flex;
+        flex-direction: row
         justify-content: center;
         align-items: center;
+      }
+
+      img {
+        height: 150px;
+        width: 150px;
+        border-radius: 75px
       }
 
       footer img {
@@ -198,6 +183,6 @@ const Home = () => (
       }
     `}</style>
   </div>
-)
+);
 
-export default Home
+export default Home;
